@@ -1,0 +1,57 @@
+/* Floating background bubbles */
+.floating-bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.1) 40%,
+    transparent 70%
+  );
+  box-shadow: 
+    inset 0 0 10px rgba(255, 255, 255, 0.2),
+    0 0 15px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: var(--size);
+  height: var(--size);
+  left: var(--left);
+  top: var(--top);
+  animation: float-gentle 6s ease-in-out infinite;
+  animation-delay: var(--delay);
+  z-index: 1;
+}
+
+.floating-bubble::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  filter: blur(1px);
+}
+
+/* Animations */
+
+
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(-10px, -15px) scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+/* Different floating bubble variations */
+.floating-bubble-1 { animation-duration: 6s; }
+.floating-bubble-2 { animation-duration: 8s; }
+.floating-bubble-3 { animation-duration: 7s; }
+.floating-bubble-4 { animation-duration: 9s; }
+.floating-bubble-5 { animation-duration: 5s; }
+.floating-bubble-6 { animation-duration: 10s; }

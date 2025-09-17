@@ -1,33 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { HeroSection } from './components/HeroSection'
+import { BubblePhoto } from './components/BubblePhoto'
+import { FloatingBubbles } from './animation/FloatingBubbles'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='relative min-h-screen w-full overflow-visible'>
+        <FloatingBubbles/>
+        <div className='relative flex w-full'>
+          <div className="w-1/2 flex items-center justify-center">
+            <BubblePhoto />
+          </div>
+          
+          {/* Right side - Hero content */}
+          <div className="flex-1 min-w-0 flex justify-center">
+            <HeroSection />
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
