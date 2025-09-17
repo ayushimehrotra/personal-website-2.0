@@ -8,14 +8,15 @@ export const FloatingBubbles  = () => {
       className={`floating-bubble floating-bubble-${i + 1}`}
       style={{
         '--delay': `${i * 0.5}s`,
-        '--size': `${Math.random() * 60 + 40}px`,
+        '--size': `${Math.random() * 120 + 80}px`,
         '--left': `${Math.random() * 100}%`,
+        '--top': `${Math.random() * 100}%`,
       } as React.CSSProperties}
     />
   ));
 
   return (
-    <div className="floating-bubble">
+    <div className="absolute inset-0 overflow-hidden pointer-events-none">
       {bubbles}
     </div>
   );
