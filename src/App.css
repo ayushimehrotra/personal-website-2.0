@@ -14,3 +14,15 @@
   color: #a6d9e1;
 }
 
+@keyframes float-gentle {
+  0%, 100% {
+  }
+  50% {
+    transform: translate(-5px, -6px) scale(1.02);
+  }
+}
+
+.float-gentle {
+  animation: float-gentle 6s ease-in-out infinite;
+}
+

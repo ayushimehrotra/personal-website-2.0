@@ -1,15 +1,13 @@
 export const HeroSection = () => {
   return (
-    <div className="space-y-4 animate-fade-in">
-        <h1 className="text-8xl font-bold font-script tracking-wide">
+    <div className="flex flex-col space-y-0">
+        <h1 className="text-[64px] font-bold font-script tracking-wide text-white ">
             Ayushi Mehrotra
         </h1>
-        
-        <div className="text-xl font-sans lg:text-2xl light-yellow font-light">
-            <p>
-            <span>undergrad @ caltech</span> |{" "}
-            <span className="light-blue">ai security researcher</span>
-            </p>
+        <div className="text-[32px] font-sans font-light">
+            <span className="light-yellow">undergrad @ caltech </span>
+            <span className="text-white">|</span>
+            <span className="light-blue"> ai security researcher</span>
         </div>
     </div>
   );

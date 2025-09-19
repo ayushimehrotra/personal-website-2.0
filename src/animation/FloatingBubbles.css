@@ -13,10 +13,10 @@
     0 0 15px rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  top: var(--top);
   width: var(--size);
   height: var(--size);
-  left: var(--left);
-  top: var(--top);
+  border-radius: 9999px;
   animation: float-gentle 6s ease-in-out infinite;
   animation-delay: var(--delay);
   z-index: 1;
@@ -48,10 +48,5 @@
   }
 }
 
-/* Different floating bubble variations */
-.floating-bubble-1 { animation-duration: 6s; }
-.floating-bubble-2 { animation-duration: 8s; }
-.floating-bubble-3 { animation-duration: 7s; }
-.floating-bubble-4 { animation-duration: 9s; }
-.floating-bubble-5 { animation-duration: 5s; }
-.floating-bubble-6 { animation-duration: 10s; }
+.floating-bubble.left  { left: 1%; }
+.floating-bubble.right { right: 1%; }

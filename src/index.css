@@ -1,3 +1,16 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+@source "../index.html";
+@source "./**/*.{js,ts,jsx,tsx,mdx}";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,h2,h3,h4,h5,h6 { font-size: inherit; font-weight: inherit; }
+}
+
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 
