@@ -3,6 +3,8 @@ import { HeroSection } from './components/HeroSection'
 import { BubblePhoto } from './components/BubblePhoto'
 import { Navigation } from './components/Navigation'
 import { ProjectsSection } from './components/ProjectsSection';
+import { BlogList } from './components/BlogList';
+import { BlogPost } from './components/BlogPost';
 import './App.css'
 import { ResearchSection } from './components/ResearchSection'
 // Import your research subpages
@@ -93,7 +95,8 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/research/hessian-sets" element={<HSetsPage />} />
-          {/* Add more research pages here as needed */}
+          <Route path="/blog" element={<BlogList />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
         </Routes>
       </Layout>
     </Router>
