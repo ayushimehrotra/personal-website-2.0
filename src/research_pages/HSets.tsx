@@ -53,7 +53,7 @@ const HSetsPage = () => {
         
         <div className="mt-12 text-center">
           <a 
-            href="#" 
+            href="https://github.com/ayushimehrotra/H-Sets" 
             className="text-gray-600 hover:text-gray-800 underline text-lg font-medium transition-colors duration-200"
           >
             github

@@ -89,6 +89,7 @@ export const ResearchSection = () => {
               link: "https://www.wicys.org/wp-content/uploads/2023/06/2023_WiCyS_Program_Final.pdf",
               year: "2023",
               label: "abstract",
+              pressLink: "https://www.aspirations.org/people/ayushi-m/117987"
             },
           ].map((entry, i) => (
             <motion.div

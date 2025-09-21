@@ -4,7 +4,7 @@ export const BubblePhoto = () => {
         <img 
             src="/headshot_bubble_website.png" 
             alt="Ayushi Mehrotra"
-            className="w-[400px] h-[400px] object-contain float-gentle"
+            className="w-[400px] h-[400px] object-contain float-gentle-main"
         />
     </div>
   );
